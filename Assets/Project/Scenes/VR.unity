@@ -397,11 +397,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 844426805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &361503414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1678554349979641344, guid: 34a22dd67c1e5344591237fdd61e78ec, type: 3}
+  m_PrefabInstance: {fileID: 736537361541811392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &361503415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1678554349979641345, guid: 34a22dd67c1e5344591237fdd61e78ec, type: 3}
   m_PrefabInstance: {fileID: 736537361541811392}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &361503416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361503414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338563eb50e96c14abca4e67fc74cf01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDistance: 0.02
 --- !u!1 &377125084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 699218207496619424, guid: a3cb63fbc355e984e9e5c2ca9e016b73, type: 3}
@@ -1401,7 +1419,7 @@ MonoBehaviour:
   _red: {r: 1, g: 0, b: 0, a: 1}
   _blue: {r: 0, g: 0, b: 1, a: 1}
   _changeColorToggle: {fileID: 349400744}
-  _saveButton: {fileID: 1654511339}
+  _saveButton: {fileID: 1458042550}
   _loadButton: {fileID: 1654511339}
   _clearButton: {fileID: 601355486}
   _drawManager: {fileID: 1832489514}
@@ -1784,11 +1802,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: useIPDInPositionTracking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: isInsightPassthroughEnabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: controllerDrivenHandPosesType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: wideMotionModeHandPosesEnabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
@@ -2997,7 +3023,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1678554349979641344, guid: 34a22dd67c1e5344591237fdd61e78ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 361503416}
   m_SourcePrefab: {fileID: 100100000, guid: 34a22dd67c1e5344591237fdd61e78ec, type: 3}
 --- !u!1001 &820484929410152696
 PrefabInstance:
