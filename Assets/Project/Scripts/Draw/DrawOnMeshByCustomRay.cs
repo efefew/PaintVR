@@ -28,8 +28,4 @@ public class DrawOnMeshByCustomRay : DrawOnMesh
         uv = Vector2.zero;
         return false;
     }
-    public void TryDraw()
-    {
-        ContinueDraw(Vector2.zero);
-    }
 }

@@ -49,6 +49,17 @@ public abstract class Draw
         _tex.SetPixels32(_bgCache);
         _tex.Apply();
     }
+    public Texture2D GetTexture() => _tex;
+    public void SetTexture(TextureData data)
+    {
+        if (data == null || data.Width != _textureWidth || data.Height != _textureHeight)
+        {
+            return;
+        }
+        byte[] bytes = System.Convert.FromBase64String(data.Base64);
+        _tex.LoadImage(bytes);
+    }
+
     protected Texture2D SetBackground()
     {
         if (_tex == null)
@@ -68,6 +79,10 @@ public abstract class Draw
         return _tex;
     }
     protected abstract bool TryGetUV(Vector2 screenPos, out Vector2 uv);
+    public void TryDraw()
+    {
+        ContinueDraw(Vector2.zero);
+    }
     public void StartDraw(Vector2 screenPos)
     {
         if (!TryGetUV(screenPos, out Vector2 uv)) return;
