@@ -1,0 +1,12 @@
+# ninja log v5
+312	1431	7777640942451999	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d995ceae2bfc0de0
+309	1536	7777640943813226	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	458335e276634aa1
+297	1554	7777640944048511	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	ec359c384a0d87
+289	1928	7777640947776956	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cfd29f1902ff4087
+306	2017	7777640946906173	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b40458aa63d92c64
+284	2098	7777640949328493	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	2aabf31440195b52
+0	2235	7777640950709750	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	170a81e0fa5a3d83
+292	2298	7777640951450423	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	4a2b4b1b16b5fca8
+1433	2300	7777640951410387	F:/Github/PaintVR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n201u69/obj/arm64-v8a/libswappywrapper.so	9243ef0ca3485575
+286	2589	7777640954379163	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	53560c34fbc7fbef
+2589	3115	7777640959631157	F:/Github/PaintVR/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n201u69/obj/arm64-v8a/libgame.so	56836c3723353590
