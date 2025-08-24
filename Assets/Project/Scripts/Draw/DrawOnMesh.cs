@@ -1,21 +1,20 @@
 using UnityEngine;
 
-[RequireComponent(typeof(MeshCollider))]
-[RequireComponent(typeof(Renderer))]
 public class DrawOnMesh : Draw
 {
-    private Renderer _rend;
-    private void Start()
+    protected GameObject _drawPlace;
+
+    public DrawOnMesh(Renderer renderer, int textureWidth = 1024, int textureHeight = 1024) : base(textureWidth, textureHeight)
     {
-        _rend = GetComponent<Renderer>();
-        _rend.material.mainTexture = SetBackground();
+        _drawPlace = renderer.gameObject;
+        renderer.material.mainTexture = SetBackground();
     }
     protected override bool TryGetUV(Vector2 screenPos, out Vector2 uv)
     {
         Ray ray = _raycastCamera.ScreenPointToRay(screenPos);
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            if (hit.collider.gameObject == gameObject)
+            if (hit.collider.gameObject == _drawPlace)
             {
                 uv = hit.textureCoord;
                 return true;
