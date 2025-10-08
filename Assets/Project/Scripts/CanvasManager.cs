@@ -69,12 +69,12 @@ public class CanvasManager : MonoBehaviour
     /// <summary>
     /// Сохраняет текущую текстуру с холста через JsonDraw.
     /// </summary>
-    private void Save() => JsonDraw.Save(_drawManager.Draw.GetTexture());
+    private void Save() => SaveTexture.Save(_drawManager.Draw.GetTexture());
 
     /// <summary>
     /// Загружает текстуру с JsonDraw и устанавливает на холст.
     /// </summary>
-    private void Load() => _drawManager.Draw.SetTexture(JsonDraw.Load());
+    private void Load() => _drawManager.Draw.SetTexture(SaveTexture.Load());
 
     /// <summary>
     /// Меняет цвет кисти в зависимости от состояния переключателя.

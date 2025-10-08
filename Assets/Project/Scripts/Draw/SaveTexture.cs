@@ -72,7 +72,7 @@ public class TextureData
 /// <summary>
 /// Статический класс для сохранения и загрузки текстур в PlayerPrefs с использованием JSON.
 /// </summary>
-public static class JsonDraw
+public static class SaveTexture
 {
     /// <summary>
     /// Ключ для хранения данных в PlayerPrefs.
